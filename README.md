@@ -22,11 +22,6 @@ You Can use plotly library by running "pip install plotly==4.14.3" command.
 
 
 ## File Content<a name="files"></a>
-
-notebooks folder:
-
-    -ETL Pipeline Preparation.ipynb: Jupyter Notebook to explain ETL Script .
-    -ML Pipeline Preparation.ipynb: Jupyter Notebook to explain ML Model.
     
 data folder:
 
