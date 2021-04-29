@@ -5,9 +5,9 @@
 
 1. [Overview](#Overview)
 2. [Installation](#installation)
-3. [File Descriptions](#files)
-4. [How to Use](#how_to_use)
-5. [Licensing, Authors, and Acknowledgements](#licensing)
+3. [File Content](#files)
+4. [User Guide](#user_guide)
+5. [Licensing, Authors, and Acknowledgements](#license)
 
 
 ## Overview
@@ -38,5 +38,23 @@ app folder:
     -run.py: Pythone script to run the app.
 
 
+## User Guide<a name="user_guide"></a>
+    
+1. Run the following commands in the project's root directory to set up your database and model.
 
+    - To run ETL pipeline that cleans data and stores in database
+        `python data/process_data.py data/disaster_messages.csv data/disaster_categories.csv data/DisasterResponse.db`
+    - To run ML pipeline that trains classifier and saves
+        `python models/train_classifier.py data/DisasterResponse.db models/classifier.pkl`
+
+2. Run the following command in the app's directory to run your web app.
+    `python run.py`
+
+
+3. Go to http://0.0.0.0:3001/
+
+
+## Licensing, Authors, Acknowledgements<a name="license"></a>
+
+Thanks to "Figure Eight" for providing the dataset for this project.
 
