@@ -32,10 +32,6 @@ data folder:
 models folder:
 
     -train_classifier.py: A Python script to create the ML pipeline model 
-    
-app folder:
-
-    -run.py: Pythone script to run the app.
 
 
 ## User Guide<a name="user_guide"></a>
