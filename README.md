@@ -35,8 +35,10 @@ models folder:
 
 app folder:
 
-    -run.py: A Python file torun the app
-    -templates: contains 2 html files: master.html for the main page of web app and go.html for the classification result page of web app
+    -run.py: A Python file to run the app
+    -templates: contains 2 html files: 
+                -master.html for the main page of web app 
+                -go.html for the classification result page of web app
 
 ## User Guide<a name="user_guide"></a>
     
