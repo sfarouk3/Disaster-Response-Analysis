@@ -1,6 +1,6 @@
 # import libraries
 import sys, os
-from models.workspace_utils import active_session
+#from models.workspace_utils import active_session
 
 from sklearn.datasets import make_multilabel_classification
 from sklearn.multioutput import MultiOutputClassifier
@@ -155,14 +155,14 @@ def main():
         print('Building model...')
         model = build_model()
         
-        with active_session():
-            print('Training model...')
-            model.fit(X_train, Y_train)
+        #with active_session():
+        print('Training model...')
+        model.fit(X_train, Y_train)
         
-            print('Evaluating model...')
-            evaluate_model(model, X_test, Y_test, category_names)
+        print('Evaluating model...')
+        evaluate_model(model, X_test, Y_test, category_names)
             
-            #input("Press Enter to continue...")
+        #input("Press Enter to continue...")
 
         print('Saving model...\n    MODEL: {}'.format(model_filepath))
         save_model(model, model_filepath)
